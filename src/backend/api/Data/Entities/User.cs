@@ -1,0 +1,10 @@
+namespace Api.Data.Entities;
+
+public sealed class User
+{
+    public Guid Id { get; init; } = Guid.NewGuid();
+    public required string Email { get; init; }
+    public required string DisplayName { get; init; }
+    public required string PasswordHash { get; init; }
+    public DateTimeOffset CreatedAt { get; init; } = DateTimeOffset.UtcNow;
+}

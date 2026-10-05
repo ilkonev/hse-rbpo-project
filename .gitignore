@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+.vite/
+node_modules/
+dist/
+.DS_Store
